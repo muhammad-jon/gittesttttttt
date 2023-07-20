@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+.header h1 {
+  color: #2a2a2a;
+  text-align: center;
+  font-size: 65.34px;
+  font-weight: 600;
+  line-height: 82px;
+  margin-bottom: 17px;
+}
+.header p {
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 33px;
+}
+.header div:nth-child(1) {
+  text-align: center;
+}
+.header div:nth-child(1) a {
+  border-radius: 67px;
+  background: #285e67;
+  padding: 16px 77px;
+  color: white;
+  font-size: 21.33px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 391px 391px;
+  grid-gap: 48px;
+}
+.header .cards .card {
+  background: url("https://img.freepik.com/free-photo/white-horse-runs-beach_1340-34263.jpg?w=2000");
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .header .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wellbeing h1 {
+  background-color: green;
+  font-size: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+$text-colorH: #2a2a2a;
+$text-colorP: #2b2b2b;
+
+.header {
+  h1 {
+    color: $text-colorH;
+    text-align: center;
+
+    font-size: 65.34px;
+
+    font-weight: 600;
+    line-height: 82px;
+    margin-bottom: 17px;
+  }
+  p {
+    color: $text-colorP;
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+  div:nth-child(1) {
+    text-align: center;
+    a {
+      border-radius: 67px;
+      background: #285e67;
+      padding: 16px 77px;
+      color: white;
+      font-size: 21.33px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 391px 391px;
+    grid-gap: 48px;
+    .card {
+      background: url("https://img.freepik.com/free-photo/white-horse-runs-beach_1340-34263.jpg?w=2000");
+      background-position: center;
+      background-size: cover;
+      border-radius: 16px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      .card {
+      }
+    }
+  }
+}
